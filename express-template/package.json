@@ -1,0 +1,46 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "description": "An Express template application.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "docker:build": "docker build -t express-template .",
+    "docker:run": "docker run -p 3000:3000 express-template",
+    "docker:dev": "docker run -p 3000:3000 -v $(pwd):/app -v /app/node_modules express-template"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocrosby/javascript-lab/express-template"
+  },
+  "keywords": [
+    "express",
+    "template"
+  ],
+  "author": "Omar Crosby",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "jest": "^30.0.2",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.1"
+  },
+  "overrides": {
+    "glob": "^10.4.5"
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8"
+  }
+}
