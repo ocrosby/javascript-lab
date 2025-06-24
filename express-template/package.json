@@ -1,0 +1,32 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "description": "An express template application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "something"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocrosby/javascript-lab/express-template"
+  },
+  "keywords": [
+    "express",
+    "template"
+  ],
+  "author": "Omar Crosby",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "jest": "^30.0.2",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.1"
+  }
+}
