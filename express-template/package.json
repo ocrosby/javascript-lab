@@ -31,5 +31,12 @@
     "jest": "^30.0.2",
     "nodemon": "^3.1.10",
     "supertest": "^7.1.1"
+  },
+  "overrides": {
+    "glob": "^10.4.5"
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8"
   }
 }
